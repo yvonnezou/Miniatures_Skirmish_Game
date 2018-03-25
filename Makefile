@@ -1,20 +1,45 @@
-sdgame.out : item.o account.o database.o game.o main.o  
-	g++ -Wall  -o sdgame.out -lcurses item.o account.o database.o game.o main.o
-	
-item.o : item.cpp item.h common_header.h util.h
-	g++ -Wall  -c item.cpp 
-	
-account.o : account.cpp account.h common_header.h
-	g++ -Wall  -c account.cpp 
-	
-database.o : database.cpp database.h item.h util.h account.h
-	g++ -Wall  -c database.cpp 
-	
-game.o : game.cpp game.h database.h util.h account.h item.h
-	g++ -Wall  -c game.cpp 
-	
-main.o : main.cpp game.h
-	g++ -Wall  -c main.cpp 
+#SRC = src/item.cpp src/account.cpp src/database.cpp src/game.cpp src/main.cpp
+OBJ = obj/item.o obj/account.o obj/database.o obj/game.o obj/main.o
+CC = g++
+CFLAGS = -Wall -c
 
-clean : 
-	rm -f sdgame.out item.o account.o database.o game.o main.o 
+bin/sdgame: $(OBJ)
+	@if [ ! -d "bin" ]; then\
+        mkdir bin;\
+    fi
+	@$(CC) -Wall -o $@ $(OBJ)
+
+obj/item.o : src/item.cpp src/item.h src/common_header.h src/util.h
+	@if [ ! -d "obj" ]; then\
+        mkdir obj;\
+    fi
+	@$(CC) $(CFLAGS) -o $@ $< #build source object
+
+obj/account.o : src/account.cpp src/account.h src/common_header.h
+	@if [ ! -d "obj" ]; then\
+        mkdir obj;\
+    fi
+	@$(CC) $(CFLAGS) -o $@ $< #build source object
+
+obj/database.o : src/database.cpp src/database.h src/item.h src/util.h src/account.h
+	@if [ ! -d "obj" ]; then\
+        mkdir obj;\
+    fi
+	@$(CC) $(CFLAGS) -o $@ $< #build source object
+
+obj/game.o : src/game.cpp src/game.h src/database.h src/util.h src/account.h src/item.h
+	@if [ ! -d "obj" ]; then\
+        mkdir obj;\
+    fi
+	@$(CC) $(CFLAGS) -o $@ $< #build source object
+
+obj/main.o : src/main.cpp src/game.h
+	@if [ ! -d "obj" ]; then\
+        mkdir obj;\
+    fi
+	@$(CC) $(CFLAGS) -o $@ $< #build source object
+
+clean:
+	rm -f obj/*.o
+	rm -f bin/*
+
