@@ -1,3 +1,10 @@
+/**/
+/*
+/* This file include class Utils
+/*
+/* Call it when generating new members
+/*
+*/
 #ifndef _UTIL_H
 #define _UTIL_H
 

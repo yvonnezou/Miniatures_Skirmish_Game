@@ -1,3 +1,10 @@
+/**/
+/*
+/* All default settings and common headers are in this file
+/* Including fighting, health value of the member
+/* The stength of the enemy can be changed by enemyRatio
+/*
+*/
 #ifndef _COMMON_HEADER_H
 #define _COMMON_HEADER_H
 
@@ -30,6 +37,6 @@ const int creditCostForCaptain = 1000;
 const int creditCostForHierophant = 500;
 const int creditCostForSoldier = 200;
 
-const double enemyRatio = 0.3;
+const double enemyRatio = 0.3;				//The strength of the enemy
 
 #endif

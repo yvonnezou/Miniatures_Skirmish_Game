@@ -1,3 +1,10 @@
+/**/
+/*
+/* This file include class role, class specialism, class captain, 
+/* class hierophant, class soldier, class squad, class package, class player
+/* These classes mainly responsible for operations with squad and its members
+/*
+*/
 #ifndef _ITEM_H_
 #define _ITEM_H_
 

@@ -1,3 +1,11 @@
+/**/
+/*
+/* This file include class SDGame
+/*
+/* The interfaces and flow of this game are presented in this file
+/*
+*/
+
 #include "game.h"
 #include "database.h"
 #include "util.h"

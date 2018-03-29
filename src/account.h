@@ -1,3 +1,10 @@
+/**/
+/*
+/* This file include the class related to user's account
+/* All functions needing to use user's personal information are in this file
+/*
+*/
+
 #ifndef _ACCOUNT_H
 #define _ACCOUNT_H
 

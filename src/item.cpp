@@ -1,3 +1,10 @@
+/**/
+/*
+/* This file include class role, class specialism, class captain,
+/* class hierophant, class soldier, class squad, class package, class player
+/* The functions in these classes are in this file
+/*
+*/
 #include "item.h"
 #include "util.h"
 
