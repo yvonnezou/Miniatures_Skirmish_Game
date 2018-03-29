@@ -1,4 +1,4 @@
-/**/
+/*
 /*
 /* All default settings and common headers are in this file
 /* Including fighting, health value of the member

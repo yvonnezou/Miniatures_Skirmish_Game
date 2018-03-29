@@ -1,4 +1,4 @@
-/**/
+/*
 /*
 /* This file include class role, class specialism, class captain, 
 /* class hierophant, class soldier, class squad, class package, class player

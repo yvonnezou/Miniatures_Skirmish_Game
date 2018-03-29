@@ -3,7 +3,7 @@ OBJ = obj/item.o obj/account.o obj/database.o obj/game.o obj/main.o
 CC = g++
 CFLAGS = -Wall -c
 
-bin/sdgame: $(OBJ)
+bin/sdgame.out: $(OBJ)
 	@if [ ! -d "bin" ]; then\
         mkdir bin;\
     fi
