@@ -1,8 +1,8 @@
 /*
-/*
-/* This file include the class related to database
-/* All functions needing to use database are in this file
-/*
+*
+* This file include the class related to database
+* All functions needing to use database are in this file
+*
 */
 
 #ifndef _DATABASE_H

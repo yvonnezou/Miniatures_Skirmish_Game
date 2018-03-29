@@ -1,9 +1,9 @@
 /*
-/*
-/* All default settings and common headers are in this file
-/* Including fighting, health value of the member
-/* The stength of the enemy can be changed by enemyRatio
-/*
+*
+* All default settings and common headers are in this file
+* Including fighting, health value of the member
+* The stength of the enemy can be changed by enemyRatio
+*
 */
 #ifndef _COMMON_HEADER_H
 #define _COMMON_HEADER_H

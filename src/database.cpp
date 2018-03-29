@@ -1,8 +1,8 @@
 /*
-/*
-/* All functions needing to use database is in this file
-/* Including visiting database, changing the data etc. 
-/*
+*
+* All functions needing to use database is in this file
+* Including visiting database, changing the data etc. 
+*
 */
 
 #include "database.h"

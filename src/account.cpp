@@ -1,9 +1,9 @@
 /*
-/*
-/* This file include functions related to user's account
-/* All functions needing to use user's personal information are in this file
-/* Including get user's name and id etc.
-/*
+*
+* This file include functions related to user's account
+* All functions needing to use user's personal information are in this file
+* Including get user's name and id etc.
+*
 */
 #include "account.h"
 

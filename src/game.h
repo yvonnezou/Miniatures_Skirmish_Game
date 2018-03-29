@@ -1,9 +1,9 @@
 /*
-/*
-/* This file include class SDGame
-/* 
-/* The flow of different interfaces are realised in this file
-/*
+*
+* This file include class SDGame
+*
+* The flow of different interfaces are realised in this file
+*
 */
 #ifndef _GAME_H
 #define _GAME_H

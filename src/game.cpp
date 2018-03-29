@@ -1,9 +1,9 @@
 /*
-/*
-/* This file include class SDGame
-/*
-/* The interfaces and flow of this game are presented in this file
-/*
+*
+* This file include class SDGame
+*
+* The interfaces and flow of this game are presented in this file
+*
 */
 
 #include "game.h"
@@ -138,7 +138,7 @@ bool SDGame::login(){
 	string password;
 	while(true){
 		cout << "====================" << endl;
-		cout << "Your username(-1 to return): ";		
+		cout << "Your username(-1 to return): ";
 		cin >> name;
 		if(name.compare(RETURN_UP_LEVEL) == 0){
 			cout << "====================" << endl;
@@ -165,7 +165,7 @@ bool SDGame::registerID(){
 
 	while(true){
 		cout << "====================" << endl;
-		cout << "Your Username(-1 to return): ";		
+		cout << "Your Username(-1 to return): ";
 		cin >> name;
 		if(name.compare(RETURN_UP_LEVEL) == 0){
 			cout << "====================" << endl;
@@ -230,7 +230,7 @@ void SDGame::updatePassword(){
 
 	while(true){
 		cout << "====================" << endl;
-		cout << "Your Original Password(-1 to return): ";		
+		cout << "Your Original Password(-1 to return): ";
 		cin >> originalPassword;
 		if(originalPassword.compare(RETURN_UP_LEVEL) == 0){
 			return;
@@ -260,7 +260,7 @@ void SDGame::generateDefaultSquad(){
 	Squad* squad = new Squad;
 	squad->addMember(Utils::generateNewCaptain(defaultHealthOfCaptain, defaultFightOfCaptain));
 	squad->addMember(Utils::generateNewHierophant(defaultHealthOfHierophant, defaultFightOfHierophant));
-	
+
 	currentPlayer = new Player(roster, squad);
 }
 
